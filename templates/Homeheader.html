@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FFD73A;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .header-logo {
+            height: 80px;
+            object-fit: contain;
+        }
+
+        .search-button {
+            background-color: #111;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 40px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../imgs/image.jpeg" alt="Dalhousie Header Logo" class="header-logo">
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tutors</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <button class="search-button">Search (for courses)</button>
+    </header>
+</body>
+</html>
+
