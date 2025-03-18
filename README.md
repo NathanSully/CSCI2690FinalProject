@@ -2,6 +2,36 @@
 
 
 
+
+
+Our Layout: 
+- had the logo of school top right and profile? in the top right?
+
+header
+- 
+
+Homepage 
+- Dalhousie Tutoring home page (Bright yellow page)
+- Academic support page 
+- Academic resources 
+
+Search Page
+- course Search page. 
+
+Tutor page
+- list of tutors 
+- tutor avalability 
+
+
+Course Detail page 
+- has a break down of the Availble tutors for the course, and helpful  resources 
+
+
+footer
+-  has a contact us with maiiling address, email, and phone number 
+
+
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
