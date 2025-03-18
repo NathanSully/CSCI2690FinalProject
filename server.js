@@ -9,5 +9,5 @@ const server = http.createServer((request, response) => {
 });
 
 server.listen(port, hostname, () => {
-    console.log(`Listening on port ${800}`);
+    console.log(`Listening on port ${port}`);
 });
