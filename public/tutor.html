@@ -59,15 +59,32 @@
             .then(response => response.json())
             .then(data => {
                 const tutorList = document.getElementById("tutor-list");
+
                 data.forEach(course => {
                     const li = document.createElement("li");
                     li.classList.add("tutor-card");
-                    li.innerHTML = `
-                        <strong>${course.tutor}</strong> <br>
-                        ${course.courseName} <br>
-                        <em>Availability:</em> ${course.availability} <br>
-                        <button onclick="bookAppointment('${course.tutor}')">Book an Appointment</button>
-                    `;
+
+                    const tutorName = document.createElement("strong");
+                    tutorName.textContent = course.tutor;
+
+                    const courseName = document.createElement("div");
+                    courseName.textContent = course.courseName;
+
+                    const availability = document.createElement("em");
+                    availability.textContent = `Availability: ${course.availability}`;
+
+                    const button = document.createElement("button");
+                    button.textContent = "Book an Appointment";
+                    button.onclick = () => bookAppointment(course.tutor);
+
+                    li.appendChild(tutorName);
+                    li.appendChild(document.createElement("br"));
+                    li.appendChild(courseName);
+                    li.appendChild(document.createElement("br"));
+                    li.appendChild(availability);
+                    li.appendChild(document.createElement("br"));
+                    li.appendChild(button);
+
                     tutorList.appendChild(li);
                 });
             })
