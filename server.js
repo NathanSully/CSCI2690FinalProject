@@ -10,8 +10,8 @@ const port = 8000;
 
 const homepageHTML = fs.readFileSync("./public/index.html", "utf-8");
 const headerHTML = fs.readFileSync("./templates/header.html", "utf-8");
-const tutorHtml = fs.readFileSync(`${__dirname}/tutor.html`, "utf-8");
-const courses = JSON.parse(fs.readFileSync(`${__dirname}/courses.json`, "utf-8"));
+const tutorHtml = fs.readFileSync(`${__dirname}/public/tutor.html`, "utf-8");
+const courses = JSON.parse(fs.readFileSync(`${__dirname}/files/courses.json`, "utf-8"));
 
 const server = http.createServer((request, response) => {
     const { pathname } = url.parse(request.url, true);
