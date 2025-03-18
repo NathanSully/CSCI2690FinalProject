@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutors and Availability</title>
+</head>
+<body>
+    <h1>Available Tutors</h1>
+    <ul id="tutor-list"></ul>
+
+    <script>
+        fetch("../files/courses")
+            .then(response => response.json())
+            .then(data => {
+                const tutorList = document.getElementById("tutor-list");
+                data.forEach(course => {
+                    const li = document.createElement("li");
+                    li.innerHTML = `<strong>${course.tutor}</strong> - ${course.courseName} <br>
+                                    <em>Availability:</em> ${course.availability}`;
+                    tutorList.appendChild(li);
+                });
+            })
+            .catch(error => console.error("Error fetching tutors:", error));
+    </script>
+</body>
+</html>
