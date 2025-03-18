@@ -10,9 +10,10 @@ const port = 8000;
 // Loading HTML
 const homepageHTML = fs.readFileSync(`${__dirname}/public/index.html`, "utf-8");
 const headerHTML = fs.readFileSync(`${__dirname}/templates/header.html`, "utf-8");
+const footerHTML = fs.readFileSync(`${__dirname}/templates/footer.html`, "utf-8");
 const tutorHtml = fs.readFileSync(`${__dirname}/public/tutor.html`, "utf-8");
 const courses = JSON.parse(fs.readFileSync(`${__dirname}/files/courses.json`, "utf-8"));
-const searchHtml =  fs.readFileSync(`${__dirname}/templates/search.html`, "utf-8");
+const searchHtml =  fs.readFileSync(`${__dirname}/public/search.html`, "utf-8");
 
 // Creating the server
 const server = http.createServer((request, response) => {
@@ -48,7 +49,7 @@ const server = http.createServer((request, response) => {
     // Routing
     if (pathname === "/home" || pathname === "/") {
         response.writeHead(200, {"Content-Type": "text/html"});
-        response.end(headerHTML + homepageHTML);
+        response.end(headerHTML + homepageHTML + footerHTML);
     }
     else if (pathname === "/courses") {
         response.writeHead(200, { "Content-Type": "application/json" });
