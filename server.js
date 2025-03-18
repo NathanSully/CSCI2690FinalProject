@@ -18,7 +18,7 @@ const server = http.createServer((request, response) => {
     // Routing
     if (pathname === "/home" || pathname === "/") {
         response.writeHead(200, {"Content-Type": "text/html"});
-        response.end(header + homepageHTML);
+        response.end(headerHTML + homepageHTML);
     }
     else if (pathname === "/about") {
         response.end("About");
