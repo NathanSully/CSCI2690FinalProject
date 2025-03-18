@@ -10,7 +10,7 @@
     <ul id="tutor-list"></ul>
 
     <script>
-        fetch("/courses")
+        fetch("../files/courses")
             .then(response => response.json())
             .then(data => {
                 const tutorList = document.getElementById("tutor-list");
