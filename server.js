@@ -20,13 +20,15 @@ const server = http.createServer((request, response) => {
     if (pathname === "/home" || pathname === "/") {
         response.writeHead(200, {"Content-Type": "text/html"});
         response.end(headerHTML + homepageHTML);
-    } else if (request.url === "/courses") {
+    }
+    else if (request.url === "/courses") {
         response.writeHead(200, { "Content-Type": "application/json" });
         response.end(JSON.stringify(courses));
     }
     else if (pathname === "/about") {
         response.end("About");
-    }else if (request.url === "/tutors") {
+    }
+    else if (request.url === "/tutors") {
         response.writeHead(200, { "Content-Type": "text/html" });
         response.end(tutorHtml);
     }
