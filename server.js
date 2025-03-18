@@ -9,6 +9,7 @@ const port = 8000;
 
 // Loading html from files
 const homepageHTML = fs.readFileSync("./public/index.html", "utf-8");
+const headerHTML = fs.readFileSync("./templates/header.html", "utf-8");
 
 const server = http.createServer((request, response) => {
     // Extracting pathname
@@ -17,7 +18,7 @@ const server = http.createServer((request, response) => {
     // Routing
     if (pathname === "/home" || pathname === "/") {
         response.writeHead(200, {"Content-Type": "text/html"});
-        response.end(homepageHTML);
+        response.end(header + homepageHTML);
     }
     else if (pathname === "/about") {
         response.end("About");
