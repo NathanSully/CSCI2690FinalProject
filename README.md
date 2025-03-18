@@ -5,10 +5,10 @@
 
 
 Our Layout: 
-- had the logo of school top right and profile? in the top right?
+
 
 header
-- 
+- had the logo of school top right and profile? in the top right?
 
 Homepage 
 - Dalhousie Tutoring home page (Bright yellow page)
