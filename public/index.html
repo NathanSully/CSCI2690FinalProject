@@ -12,7 +12,6 @@ section {
     text-align: center;
 }
 
-
 input {
             width: 60%;
             padding: 10px;
@@ -42,7 +41,65 @@ input {
         }
 
 
+
+        body {
+            margin: 0px 100px 0px 100px;
+            padding: 0;
+            background-color: #FFD73A;
+            font-family: 'Georgia', serif;
+            color: #111;
+        }
+    
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 150px 100px;
+        }
+    
+        .text-section {
+            max-width: 50%;
+        }
+    
+        .text-section h1 {
+            font-size: 64px;
+            margin: 0;
+        }
+    
+        .book-button {
+            display: inline-block;
+            margin-top: 40px;
+            background-color: #111;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 40px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        .homepage-img img {
+            width: 800px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+
+
 </style>
+
+<body>
+    <div class="main-content">
+        <div class="text-section">
+            <h1>Dalhousie<br>Tutoring Services</h1>
+            <a class="book-button" href="tutor.html">Book a session</a>
+        </div>
+    
+        <div class="homepage-img">
+            <img src="../files/homepage-tutoring-photo.jpeg" alt="Students tutoring image">
+        </div>
+    </div>
+
    <section id="home">
         <h2>Welcome to Dal Tutoring Services</h2>
         <p>Connecting students with expert tutors in various subjects.</p>
@@ -74,7 +131,7 @@ input {
         <p>Phone: (555) 123-4567</p>
     </section>
 
-
+</body>
     <script>
     let courses = [];
 

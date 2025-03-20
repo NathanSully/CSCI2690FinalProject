@@ -68,10 +68,10 @@ We noticed that the Dalhousie tutoring services are moderately difficult to acce
 - Mengcheng Li (B00983864)
 
 ## Project Status Throughout the Sprint
-March 17 - ![Progress Bar %](https://geps.dev/progress/0)
-March 18 - ![Progress Bar %](https://geps.dev/progress/37)
-March 19 - ![Progress Bar %](https://geps.dev/progress/50)
-March 20 - ![Progress Bar %](https://geps.dev/progress/)
+March 17 - ![Progress Bar %](https://geps.dev/progress/0)<br>
+March 18 - ![Progress Bar %](https://geps.dev/progress/37)<br>
+March 19 - ![Progress Bar %](https://geps.dev/progress/50)<br>
+March 20 - ![Progress Bar %](https://geps.dev/progress/)<br>
 March 21 - ![Progress Bar %](https://geps.dev/progress/)
 
 ![Image of the Dalhousie Logo](files/banner.jpeg)
