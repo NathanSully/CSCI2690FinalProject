@@ -34,6 +34,46 @@
             font-size: 11px;
             margin: 0;
         }
+
+              /* Media query for Phone */
+    @media (min-width: 320px) and (max-width: 750px){
+        footer {
+            background-color: #FFD73A;
+            padding: 10px 8px;
+            font-family: 'Georgia', serif;
+            color: #111;
+        }
+
+        footer > p {
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .information {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .information div {
+            flex: 1;
+            min-width: 175px;
+        }
+
+        .information h2 {
+            font-size: 8px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .information p {
+            font-size: 7px;
+            margin: 0;
+        }
+
+    }
    
    </style>
    
