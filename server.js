@@ -36,10 +36,8 @@ const server = http.createServer((request, response) => {
                 response.end(data);
             }
         });
-        return;
     }
-
-    if (pathname === "/home" || pathname === "/") {
+    else if (pathname === "/home" || pathname === "/") {
         response.writeHead(200, {"Content-Type": "text/html"});
         response.end(headerHTML + homepageHTML + footerHTML);
     }
