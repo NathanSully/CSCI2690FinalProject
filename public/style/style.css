@@ -11,3 +11,22 @@
         font-size: 24px;
     }
 }
+
+
+
+/* Media query for Phones */
+@media (min-width: 320px) and (max-width: 750px){
+    body {
+        font-size: 12px;
+        background-color: blue;
+    }
+    .main-content {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 6px;
+    }
+}
+
+
+
