@@ -4,48 +4,90 @@
         "courseName": "Introduction to Computer Science",
         "tutor": "Alice Johnson",
         "description": "Learn the basics of programming, algorithms, and problem-solving using Python.",
-        "availability": "yes"
+        "availability": "yes",
+        "reviews": [
+            {
+                "reviewer": "John Doe",
+                "rating": 5,
+                "comment": "Great introductory course with hands-on coding exercises!"
+            },
+            {
+                "reviewer": "Jane Smith",
+                "rating": 4,
+                "comment": "Good course, but I wish there were more advanced topics."
+            }
+        ]
     },
     {
         "courseCode": "CSCI 1120.03",
         "courseName": "Introduction to Computer Systems",
         "tutor": "David Kim",
         "description": "Explore computer architecture, operating systems, and low-level programming concepts.",
-        "availability": "no"
+        "availability": "no",
+        "reviews": [
+            {
+                "reviewer": "Mark Lee",
+                "rating": 3,
+                "comment": "The course was interesting, but the material was quite difficult."
+            }
+        ]
     },
     {
         "courseCode": "CSCI 1170.03",
         "courseName": "Introduction to Web Design and Development",
         "tutor": "Sophia Martinez",
         "description": "Develop skills in HTML, CSS, and JavaScript to create modern, responsive web pages.",
-        "availability": "yes"
+        "availability": "yes",
+        "reviews": [
+            {
+                "reviewer": "Emily Watson",
+                "rating": 5,
+                "comment": "Loved this course! Learned a lot about web development and the projects were fun."
+            }
+        ]
     },
     {
         "courseCode": "CSCI 1315.03",
         "courseName": "Discrete Mathematics for Computer Science",
         "tutor": "John Smith",
         "description": "Study logic, set theory, combinatorics, and graph theory for computational problem-solving.",
-        "availability": "no"
+        "availability": "no",
+        "reviews": []
     },
     {
         "courseCode": "CSCI 1800.03",
         "courseName": "Society and Technology before Automation",
         "tutor": "Emily Brown",
         "description": "Examine the impact of technology on society before the rise of automation.",
-        "availability": "yes"
+        "availability": "yes",
+        "reviews": [
+            {
+                "reviewer": "Sarah Jones",
+                "rating": 4,
+                "comment": "Interesting course with relevant content, but some lectures were a bit dry."
+            }
+        ]
     },
     {
         "courseCode": "CSCI 1801.03",
         "courseName": "Society and Technology in the Automation Age",
         "tutor": "Michael Lee",
         "description": "Analyze the influence of automation on work, ethics, and daily life in modern society.",
-        "availability": "no"
+        "availability": "no",
+        "reviews": []
     },
     {
         "courseCode": "CSCI 2100.03",
         "courseName": "Communication Skills - Oral and Written",
         "tutor": "Olivia Davis",
         "description": "Improve oral and written communication skills, focusing on technical and professional settings.",
-        "availability": "yes"
+        "availability": "yes",
+        "reviews": [
+            {
+                "reviewer": "Chris Walker",
+                "rating": 5,
+                "comment": "This course really helped improve my presentation and writing skills!"
+            }
+        ]
     }
 ]
