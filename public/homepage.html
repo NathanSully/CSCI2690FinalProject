@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dalhousie Tutoring Services</title>
-
     <style>
-        .main-content {
-            padding: 250px 100px;
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFD73A;
+            font-family: 'Georgia', serif;
+            color: #111;
         }
-
-        .main-content h1 {
+    
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 150px 100px;
+        }
+    
+        .text-section {
+            max-width: 50%;
+        }
+    
+        .text-section h1 {
             font-size: 64px;
             margin: 0;
         }
+    
         .book-button {
             display: inline-block;
             margin-top: 40px;
@@ -25,20 +40,25 @@
             text-decoration: none;
             font-weight: bold;
         }
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #FFD73A;
-            font-family: 'Georgia', serif;
-            color: #111;
+    
+        .homepage-img img {
+            width: 500px;
+            height: auto;
+            border-radius: 8px;
         }
-
     </style>
 </head>
+
+    
 <body>
     <div class="main-content">
-        <h1>Dalhousie<br>Tutoring Services</h1>
-        <a class="book-button" href="tutor.html">Book a session</a>
+        <div class="text-section">
+            <h1>Dalhousie<br>Tutoring Services</h1>
+            <a class="book-button" href="tutor.html">Book a session</a>
+        </div>
+    
+        <div class="homepage-img">
+            <img src="../files/homepage-tutoring-photo.jpeg" alt="Students tutoring image">
+        </div>
     </div>
 </body>
-</html>
