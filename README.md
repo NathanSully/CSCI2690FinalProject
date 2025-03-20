@@ -27,13 +27,13 @@ We noticed that the Dalhousie tutoring services are moderately difficult to acce
 - [Latest Version of Node.js](https://nodejs.org/en)
 
 ## How to Deploy the Project (Windows)
-**1. Open the project folder in a terminal.**
+1. Open the project folder in a terminal.
     * Open a terminal/cmd prompt
     * cd (path to project folder here)
-**2. Launch the project using node in the terminal.**
+2. Launch the project using node in the terminal.
     * Type 'npm start' within the project folder to start the project
     * If you cannot use node in the terminal for some reason, please locate server.js and run that within a terminal
-**3. Go to your web browser and go to the site 'localhost:8000' to see the website.**
+3. Go to your web browser and go to the site 'localhost:8000' to see the website.
 
 ## Visuals
 ![Alt Text of Example Image for Project 1]()
