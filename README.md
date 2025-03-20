@@ -1,7 +1,7 @@
-# Final Project (2690)
+# ✨ Final Project (2690) 💫
 ![Example Image for Project](./files/screenshot-homepage.png)
 
-## Our Layout:
+## 🏗️ Our Layout 🏗️
 1. Header
     - Logo of university in the top right?
     - And profile in the top right?
@@ -19,13 +19,13 @@
 6. Footer
     -  Has a Contact us with Mailing Address, Email, and Phone Number 
 
-## Description
+## 📝 Description 📜
 We noticed that the Dalhousie tutoring services are moderately difficult to access, which could lead to students not seeking out the support they need when it comes to learning. The current study skill section of the Dalhousie website is a link within the academic support section, which can be challenging to find on its own. Once on the study skill section, Dalhousie needs you to reach out to their 'Study/Skills and Tutoring Office' through email and phone, which could be handled much better through an interactive applications. In addition, some students might also need specialized tutoring services for certain courses that Dalhousie can't offer.
 
-## Tools Required for the Project
+## 🔧 Tools Required for the Project 🛠️
 - [Latest Version of Node.js](https://nodejs.org/en)
 
-## How to Deploy the Project (Windows)
+## 💻 How to Deploy the Project (Windows) 🪟
 1. Open the project folder in a terminal.
     * Open a terminal/cmd prompt
     * cd (path to project folder here)
@@ -34,10 +34,10 @@ We noticed that the Dalhousie tutoring services are moderately difficult to acce
     * If you cannot use node in the terminal for some reason, please locate server.js and run that within a terminal
 3. Go to your web browser and go to the site 'localhost:8000' to see the website.
 
-## Burndown Chart
+## 📉 Burndown Chart 🔥
 ![Example Image for Project](./files/BurndownChart.png)
 
-## Roadmap
+## 🗺️ Roadmap 🚗
 ### Research
 1. Research an online website builder (we ended up coding it from scratch).
 2. Find different advertisements around campus that display tutoring services (we used fake names and details for examples).
@@ -56,7 +56,7 @@ We noticed that the Dalhousie tutoring services are moderately difficult to acce
 13. Test reports for accuracy and relevance.
 14. Maintenance & Touchups.
 
-## Authors and Acknowledgment
+## ✍️ Authors and Acknowledgment 🙏
 - Nathan Sullivan (B00955241)
 - Kyle Shepard (B00962444)
 - Manika Gupta (B00949856)
@@ -64,7 +64,7 @@ We noticed that the Dalhousie tutoring services are moderately difficult to acce
 - Tung Ngo (B00949590)
 - Mengcheng Li (B00983864)
 
-## Project Status Throughout the Sprint
+## ⏳ Project Status Throughout the Sprint 🚧
 March 17 - ![Progress Bar %](https://geps.dev/progress/0)<br>
 March 18 - ![Progress Bar %](https://geps.dev/progress/37)<br>
 March 19 - ![Progress Bar %](https://geps.dev/progress/50)<br>
@@ -73,6 +73,6 @@ March 21 - ![Progress Bar %](https://geps.dev/progress/100)
 
 ![Image of the Dalhousie Logo](files/banner.jpeg)
 
-## Resources Used:
+## 📚 Resources Used 💡
     [1]     “Services,” Dalhousie University, 2025. https://www.dal.ca/about/leadership-governance/academic-integrity/faculty-resources/services.html (accessed Mar. 20, 2025).
 ‌
