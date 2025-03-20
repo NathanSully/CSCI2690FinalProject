@@ -133,57 +133,57 @@ input {
 
 </body>
     <script>
-    let courses = [];
+        let courses = [];
 
-fetch('/courses')
-    .then(response => response.json())
-    .then(data => courses = data)
-    .catch(error => console.error(error));
+        fetch('/courses')
+            .then(response => response.json())
+            .then(data => courses = data)
+            .catch(error => console.error(error));
 
-function searchCourses() {
-    let query = document.getElementById('courseSearch').value.trim().toLowerCase();
-    let tutorList = document.getElementById('tutor-results'); // Use new ID
-    tutorList.innerHTML = ''; 
+        function searchCourses() {
+            let query = document.getElementById('courseSearch').value.trim().toLowerCase();
+            let tutorList = document.getElementById('tutor-results'); // Use new ID
+            tutorList.innerHTML = ''; 
 
-    let filteredCourses = courses.filter(course =>
-        course.courseCode.toLowerCase().includes(query) ||
-        course.courseName.toLowerCase().includes(query)
-    );
+            let filteredCourses = courses.filter(course =>
+                course.courseCode.toLowerCase().includes(query) ||
+                course.courseName.toLowerCase().includes(query)
+            );
 
-    if (filteredCourses.length === 0) {
-        alert("No tutors available for the entered course.");
-        return;
-    }
+            if (filteredCourses.length === 0) {
+                alert("No tutors available for the entered course.");
+                return;
+            }
 
-    filteredCourses.forEach(course => {
-        const li = document.createElement("li");
-        li.classList.add("tutor-card");
+            filteredCourses.forEach(course => {
+                const li = document.createElement("li");
+                li.classList.add("tutor-card");
 
-        const tutorName = document.createElement("strong");
-        tutorName.textContent = course.tutor;
+                const tutorName = document.createElement("strong");
+                tutorName.textContent = course.tutor;
 
-        const courseName = document.createElement("div");
-        courseName.textContent = course.courseName;
+                const courseName = document.createElement("div");
+                courseName.textContent = course.courseName;
 
-        const availability = document.createElement("em");
-        availability.textContent = `Availability: ${course.availability}`;
+                const availability = document.createElement("em");
+                availability.textContent = `Availability: ${course.availability}`;
 
-        const button = document.createElement("button");
-        button.textContent = "Book an Appointment";
-        button.classList.add("book-button");
-        button.onclick = () => bookAppointment(course.tutor);
+                const button = document.createElement("button");
+                button.textContent = "Book an Appointment";
+                button.classList.add("book-button");
+                button.onclick = () => bookAppointment(course.tutor);
 
-        li.appendChild(tutorName);
-        li.appendChild(document.createElement("br"));
-        li.appendChild(courseName);
-        li.appendChild(document.createElement("br"));
-        li.appendChild(availability);
-        li.appendChild(document.createElement("br"));
-        li.appendChild(button);
+                li.appendChild(tutorName);
+                li.appendChild(document.createElement("br"));
+                li.appendChild(courseName);
+                li.appendChild(document.createElement("br"));
+                li.appendChild(availability);
+                li.appendChild(document.createElement("br"));
+                li.appendChild(button);
 
-        tutorList.appendChild(li);
-    });
-}
+                tutorList.appendChild(li);
+            });
+        }
 
         function bookAppointment(tutorName) {
             alert(`Booking an appointment with ${tutorName}`);
