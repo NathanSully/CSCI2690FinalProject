@@ -1,6 +1,7 @@
 ![Image of the Dalhousie Logo](files/banner.jpeg)
 
 # Final Project (2690)
+![Example Image for Project](./files/screenshot-homepage.png)
 
 ## Our Layout:
 1. Header
@@ -35,8 +36,7 @@ We noticed that the Dalhousie tutoring services are moderately difficult to acce
     * If you cannot use node in the terminal for some reason, please locate server.js and run that within a terminal
 3. Go to your web browser and go to the site 'localhost:8000' to see the website.
 
-## Visuals
-![Example Image for Project](./files/screenshot-homepage.png)
+## Burndown Chart
 ![Example Image for Project](./files/BurndownChart.png)
 
 ## Roadmap
