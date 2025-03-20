@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            color: #111;
+        }
+
+        .course {
+            background-color: #fff;
+            padding: 15px;
+            margin: 25px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .course h2 {
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .reviews {
+            margin-top: 10px;
+            padding-left: 15px;
+            border-left: 3px solid #FFD73A;
+        }
+
+        .review {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .lecture-upload {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .lecture-list {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>Available Courses</h1>
+    </div>
+
+    <script>
+        fetch('/courses')
+            .then(response => response.json())  // Convert response to JSON
+            .then(courses => {
+                const mainContent = document.querySelector('.main-content');
+
+                courses.forEach(course => {
+                    if (course.availability === "yes") {
+                        let courseElement = document.createElement('div');
+                        courseElement.classList.add('course');
+
+                        let lectureUpload = `
+                            <div class="lecture-upload">
+                                <h3>Upload Lecture Recording for ${course.courseName}</h3>
+                                <input type="file" class="lectureInput" accept="video/*">
+                                <button onclick="uploadLecture(this, '${course.courseCode}')">Upload</button>
+                                <div class="lecture-list">
+                                    <h4>Uploaded Lectures:</h4>
+                                    <ul class="lectureItems"></ul>
+                                </div>
+                            </div>
+                        `;
+
+                        courseElement.innerHTML = `
+                            <h2>${course.courseName} (${course.courseCode})</h2>
+                            <p><strong>Tutor:</strong> ${course.tutor}</p>
+                            <p>${course.description}</p>
+                            <div class="reviews">
+                                <h4>Reviews:</h4>
+                                ${course.reviews.length > 0 
+                                    ? course.reviews.map(review => 
+                                        `<p class="review"><strong>${review.reviewer}:</strong> ⭐${review.rating}/5 - ${review.comment}</p>`
+                                    ).join('') 
+                                    : "<p class='review'>No reviews yet.</p>"
+                                }
+                            </div>
+                            ${lectureUpload}
+                        `;
+
+                        mainContent.appendChild(courseElement);
+
+                        loadUploadedLectures(course.courseCode, courseElement);
+                    }
+                });
+            })
+            .catch(error => console.error('Error loading courses:', error));
+
+        function uploadLecture(button, courseCode) {
+            const input = button.previousElementSibling;
+            const list = button.nextElementSibling.querySelector('.lectureItems');
+
+            if (input.files.length > 0) {
+                const file = input.files[0];
+                const fileName = file.name;
+
+                const blobURL = URL.createObjectURL(file);  // Create a Blob URL for the file
+
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <strong>${fileName}</strong> - Uploaded for ${courseCode}
+                    <a href="${blobURL}" download="${fileName}">Download</a>
+                `;
+                list.appendChild(listItem);
+
+                // Save the uploaded file to localStorage (if needed)
+                let uploadedLectures = JSON.parse(localStorage.getItem('uploadedLectures')) || {};
+                if (!uploadedLectures[courseCode]) uploadedLectures[courseCode] = [];
+                uploadedLectures[courseCode].push(fileName);
+                localStorage.setItem('uploadedLectures', JSON.stringify(uploadedLectures));
+
+                input.value = "";  // Clear input field
+            } else {
+                alert("Please select a file to upload.");
+            }
+        }
+
+        function loadUploadedLectures(courseCode, courseElement) {
+            const uploadedLectures = JSON.parse(localStorage.getItem('uploadedLectures')) || {};
+            const courseLectures = uploadedLectures[courseCode] || [];
+
+            const lectureList = courseElement.querySelector('.lectureItems');
+            courseLectures.forEach(lecture => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <strong>${lecture}</strong> - Uploaded for ${courseCode}
+                    <a href="#" download="${lecture}">Download</a>
+                `;
+                lectureList.appendChild(listItem);
+            });
+        }
+    </script>
+</body>
+</html>

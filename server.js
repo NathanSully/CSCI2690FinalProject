@@ -11,6 +11,8 @@ const footerHTML = fs.readFileSync(`${__dirname}/templates/footer.html`, "utf-8"
 const tutorHtml = fs.readFileSync(`${__dirname}/public/tutor.html`, "utf-8");
 const courses = JSON.parse(fs.readFileSync(`${__dirname}/files/courses.json`, "utf-8"));
 const searchHtml =  fs.readFileSync(`${__dirname}/public/search.html`, "utf-8");
+const courseHtml =  fs.readFileSync(`${__dirname}/public/course.html`, "utf-8");
+
 
 const server = http.createServer((request, response) => {
     const { pathname } = url.parse(request.url, true);
@@ -52,6 +54,10 @@ const server = http.createServer((request, response) => {
     else if (pathname === "/search"){
         response.writeHead(200, { "Content-Type": "text/html" });
         response.end(headerHTML +searchHtml+ footerHTML);
+    }
+    else if (pathname === "/course"){
+        response.writeHead(200, { "Content-Type": "text/html" });
+        response.end(headerHTML +courseHtml+ footerHTML);
     }
     else {
         response.writeHead(404, {"Content-Type": "text/html"});
