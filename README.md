@@ -24,7 +24,7 @@
 We noticed that the Dalhousie tutoring services are moderately difficult to access, which could lead to students not seeking out the support they need when it comes to learning. The current study skill section of the Dalhousie website is a link within the academic support section, which can be challenging to find on its own. Once on the study skill section, Dalhousie needs you to reach out to their 'Study/Skills and Tutoring Office' through email and phone, which could be handled much better through an interactive applications. In addition, some students might also need specialized tutoring services for certain courses that Dalhousie can't offer.
 
 ## Tools Required for the Project
-- (Latest Version of Node.js)[https://nodejs.org/en]
+- [Latest Version of Node.js](https://nodejs.org/en)
 
 ## How to Deploy the Project (Windows)
 1. Open the project folder in a terminal.
