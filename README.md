@@ -1,5 +1,3 @@
-![Image of the Dalhousie Logo](files/banner.jpeg)
-
 # Final Project (2690)
 ![Example Image for Project](./files/screenshot-homepage.png)
 
