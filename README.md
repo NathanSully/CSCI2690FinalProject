@@ -76,7 +76,6 @@ March 21 - ![Progress Bar %](https://geps.dev/progress/)
 
 ![Image of the Dalhousie Logo](files/banner.jpeg)
 
-Resources: 
-
-[1]     “Services,” Dalhousie University, 2025. https://www.dal.ca/about/leadership-governance/academic-integrity/faculty-resources/services.html (accessed Mar. 20, 2025).
+## Resources Used:
+    [1]     “Services,” Dalhousie University, 2025. https://www.dal.ca/about/leadership-governance/academic-integrity/faculty-resources/services.html (accessed Mar. 20, 2025).
 ‌
