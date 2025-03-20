@@ -36,9 +36,8 @@ We noticed that the Dalhousie tutoring services are moderately difficult to acce
 3. Go to your web browser and go to the site 'localhost:8000' to see the website.
 
 ## Visuals
-![Alt Text of Example Image for Project 1]()
-![Alt Text of Example Image for Project 2]()
-![Alt Text of Example Image for Project 3]()
+![Example Image for Project](./files/screenshot-homepage.png)
+![Example Image for Project](./files/BurndownChart.png)
 
 ## Roadmap
 ### Research
@@ -71,8 +70,8 @@ We noticed that the Dalhousie tutoring services are moderately difficult to acce
 March 17 - ![Progress Bar %](https://geps.dev/progress/0)<br>
 March 18 - ![Progress Bar %](https://geps.dev/progress/37)<br>
 March 19 - ![Progress Bar %](https://geps.dev/progress/50)<br>
-March 20 - ![Progress Bar %](https://geps.dev/progress/)<br>
-March 21 - ![Progress Bar %](https://geps.dev/progress/)
+March 20 - ![Progress Bar %](https://geps.dev/progress/100)<br>
+March 21 - ![Progress Bar %](https://geps.dev/progress/100)
 
 ![Image of the Dalhousie Logo](files/banner.jpeg)
 
