@@ -11,7 +11,7 @@
         "courseName": "Introduction to Computer Systems",
         "tutor": "David Kim",
         "description": "Explore computer architecture, operating systems, and low-level programming concepts.",
-        "availability": "no"
+        "availability": "yes"
     },
     {
         "courseCode": "CSCI 1170.03",
@@ -25,7 +25,7 @@
         "courseName": "Discrete Mathematics for Computer Science",
         "tutor": "John Smith",
         "description": "Study logic, set theory, combinatorics, and graph theory for computational problem-solving.",
-        "availability": "no"
+        "availability": "yes"
     },
     {
         "courseCode": "CSCI 1800.03",
@@ -39,7 +39,7 @@
         "courseName": "Society and Technology in the Automation Age",
         "tutor": "Michael Lee",
         "description": "Analyze the influence of automation on work, ethics, and daily life in modern society.",
-        "availability": "no"
+        "availability": "yes"
     },
     {
         "courseCode": "CSCI 2100.03",
